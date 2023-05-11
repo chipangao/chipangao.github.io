@@ -4,7 +4,6 @@ import { ref, computed, watch } from 'vue';
 import { configStore } from './stores/config';
 
 const config = configStore();
-const themeRef = ref(config.theme)
 config.setTheme(window.localStorage.getItem('theme'))
 
 function mounted() {
@@ -19,7 +18,6 @@ function mounted() {
 <template>
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-
     <div class="wrapper">
       <nav>
         {{config.theme}}
@@ -28,7 +26,6 @@ function mounted() {
       </nav>
     </div>
   </header>
-
   <RouterView />
 </template>
 
