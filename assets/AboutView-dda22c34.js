@@ -1,1 +1,0 @@
-import{_ as c,o as e,c as t,d as s,a as _}from"./index-0f7f69d7.js";const a={};function r(n,o){return e(),t("div",null," this is my about page ")}const u=c(a,[["render",r]]),m=s({__name:"AboutView",setup(n){return(o,i)=>(e(),t("div",null,[_(u)]))}});export{m as default};
